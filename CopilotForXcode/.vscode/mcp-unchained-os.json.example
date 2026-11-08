@@ -1,0 +1,22 @@
+{
+  "servers": {
+    "unchained-os": {
+      "command": "python3",
+      "args": [
+        "/absolute/path/to/unchained-os/mcp_server.py"
+      ],
+      "env": {
+        "UNCHAINED_MCP_BASE_URL": "http://localhost:8000",
+        "UNCHAINED_MCP_TOKEN": "replace-with-dashboard-token"
+      },
+      "disabled": false,
+      "autoApprove": [
+        "get_status",
+        "get_aircraft",
+        "get_satellites",
+        "search_aircraft",
+        "ask_chat"
+      ]
+    }
+  }
+}
